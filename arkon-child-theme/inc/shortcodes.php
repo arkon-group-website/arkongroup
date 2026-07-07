@@ -4,5 +4,5 @@ if (!defined('ABSPATH')) {
 }
 
 add_shortcode('arkon_year', function () {
-    return esc_html(date('Y'));
+    return esc_html(wp_date('Y'));
 });

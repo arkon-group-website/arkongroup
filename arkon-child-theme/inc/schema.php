@@ -4,15 +4,16 @@ if (!defined('ABSPATH')) {
 }
 
 add_action('wp_head', function () {
-    if (!is_front_page()) {
+    if (!function_exists('is_front_page') || !is_front_page()) {
         return;
     }
 
     $schema = [
         '@context' => 'https://schema.org',
         '@type' => 'Organization',
+        '@id' => esc_url(home_url('/#organization')),
         'name' => 'ARKON Group',
-        'url' => home_url('/'),
+        'url' => esc_url(home_url('/')),
         'description' => 'ARKON Group is a Saudi multidisciplinary group providing engineering consultancy, security consultancy, construction support, quality inspection and digital marketing solutions.',
         'areaServed' => [
             '@type' => 'Country',
@@ -27,5 +28,5 @@ add_action('wp_head', function () {
         ],
     ];
 
-    echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . PHP_EOL;
+    echo '<script type="application/ld+json" id="arkon-organization-schema">' . wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . PHP_EOL;
 });
