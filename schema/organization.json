@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ARKON Group",
+  "url": "https://arkongroup.com.sa",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Saudi Arabia"
+  },
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "ARKON Engineering Consultancy Co."
+    },
+    {
+      "@type": "Organization",
+      "name": "ELITE Security Consultancy Co."
+    },
+    {
+      "@type": "Organization",
+      "name": "Integrated Building Systems"
+    },
+    {
+      "@type": "Organization",
+      "name": "Quality Inspection Company"
+    },
+    {
+      "@type": "Organization",
+      "name": "Turning Point Digital Marketing Co."
+    }
+  ]
+}
