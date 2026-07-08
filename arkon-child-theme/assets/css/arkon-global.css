@@ -185,6 +185,350 @@ body {
   max-width: 760px;
 }
 
+.arkon-section--light {
+  background: #f6f8fb;
+}
+
+.arkon-section--blueprint {
+  background:
+    linear-gradient(rgba(6,23,43,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,23,43,.055) 1px, transparent 1px),
+    linear-gradient(180deg, #ffffff, #eef4fb);
+  background-size: 44px 44px, 44px 44px, auto;
+}
+
+.arkon-section__header {
+  max-width: 880px;
+  position: relative;
+  z-index: 1;
+}
+
+.arkon-section__header--dark .arkon-section-lead,
+.arkon-dark .arkon-section-lead {
+  color: rgba(255,255,255,.78);
+}
+
+.arkon-section__grid {
+  margin-top: clamp(32px, 5vw, 56px);
+}
+
+.arkon-trust-strip,
+.arkon-tag-list,
+.arkon-check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arkon-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.arkon-trust-strip li,
+.arkon-tag-list li {
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  color: rgba(255,255,255,.82);
+  font-size: .82rem;
+  font-weight: 700;
+  padding: 7px 12px;
+}
+
+.arkon-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 22px;
+}
+
+.arkon-tag-list li {
+  border-color: #dce5ef;
+  color: #42556a;
+}
+
+.arkon-card-index {
+  color: var(--arkon-gold);
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.arkon-text-link {
+  color: var(--arkon-blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.arkon-text-link:hover,
+.arkon-text-link:focus-visible {
+  color: var(--arkon-blue-2);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.arkon-hero__visual {
+  min-height: 520px;
+  position: relative;
+  z-index: 2;
+}
+
+.arkon-command-panel {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.045)),
+    linear-gradient(135deg, rgba(0,87,157,.18), rgba(216,167,46,.08));
+  border: 1px solid var(--arkon-border);
+  border-radius: var(--arkon-radius-lg);
+  box-shadow: var(--arkon-shadow);
+  display: grid;
+  gap: 22px;
+  height: 100%;
+  min-height: 520px;
+  overflow: hidden;
+  padding: clamp(22px, 3vw, 34px);
+  position: relative;
+}
+
+.arkon-command-panel::before {
+  background:
+    linear-gradient(rgba(255,255,255,.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.075) 1px, transparent 1px);
+  background-size: 30px 30px;
+  content: "";
+  inset: 0;
+  opacity: .28;
+  pointer-events: none;
+  position: absolute;
+}
+
+.arkon-command-panel__header,
+.arkon-command-panel__map,
+.arkon-command-panel__metrics {
+  position: relative;
+  z-index: 1;
+}
+
+.arkon-command-panel__header {
+  align-items: start;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.arkon-command-panel__header span {
+  color: rgba(255,255,255,.72);
+  font-weight: 700;
+}
+
+.arkon-command-panel__header strong {
+  color: var(--arkon-gold);
+  text-align: end;
+}
+
+.arkon-command-panel__map {
+  align-items: center;
+  aspect-ratio: 1 / .72;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.arkon-command-panel__node {
+  align-items: center;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  color: rgba(255,255,255,.88);
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 52px;
+}
+
+.arkon-command-panel__node--center {
+  background: linear-gradient(135deg, var(--arkon-blue), var(--arkon-gold));
+  color: #fff;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  min-height: 118px;
+}
+
+.arkon-command-panel__metrics {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.arkon-command-panel__metrics div {
+  background: rgba(2,11,24,.42);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--arkon-radius-md);
+  padding: 16px;
+}
+
+.arkon-command-panel__metrics dt {
+  color: rgba(255,255,255,.64);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.arkon-command-panel__metrics dd {
+  color: #fff;
+  font-weight: 900;
+  margin: 6px 0 0;
+}
+
+.arkon-company-card,
+.arkon-feature-card,
+.arkon-industry-card,
+.arkon-download-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.arkon-company-card h3,
+.arkon-feature-card h3,
+.arkon-command-card h3,
+.arkon-industry-card h3,
+.arkon-download-card h3,
+.arkon-request-panel h3,
+.arkon-proof-list h3 {
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.arkon-company-card p,
+.arkon-feature-card p,
+.arkon-command-card p,
+.arkon-industry-card p,
+.arkon-download-card p,
+.arkon-request-panel p,
+.arkon-proof-list p {
+  color: #526273;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.arkon-company-card .arkon-text-link,
+.arkon-download-card .arkon-text-link {
+  margin-top: auto;
+}
+
+.arkon-feature-grid,
+.arkon-command-grid,
+.arkon-industry-grid,
+.arkon-download-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.arkon-feature-card,
+.arkon-industry-card,
+.arkon-download-card,
+.arkon-request-panel,
+.arkon-proof-list article {
+  background: #fff;
+  border: 1px solid #e4ebf2;
+  border-radius: var(--arkon-radius-md);
+  box-shadow: 0 18px 46px rgba(6,23,43,.08);
+  min-height: 220px;
+  padding: 24px;
+}
+
+.arkon-command-card {
+  background: linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.045));
+  border: 1px solid var(--arkon-border);
+  border-radius: var(--arkon-radius-md);
+  padding: 24px;
+}
+
+.arkon-command-card p {
+  color: rgba(255,255,255,.74);
+}
+
+.arkon-command-card h3 {
+  color: #fff;
+}
+
+.arkon-split-layout,
+.arkon-cta-layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(28px, 5vw, 64px);
+  grid-template-columns: .86fr 1.14fr;
+  position: relative;
+  z-index: 1;
+}
+
+.arkon-proof-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.arkon-proof-list article {
+  background: rgba(255,255,255,.075);
+  border-color: var(--arkon-border);
+  box-shadow: none;
+  min-height: 210px;
+}
+
+.arkon-proof-list h3,
+.arkon-request-panel h3 {
+  color: #fff;
+}
+
+.arkon-proof-list p {
+  color: rgba(255,255,255,.74);
+}
+
+.arkon-download-card {
+  min-height: 250px;
+}
+
+.arkon-cta-layout {
+  grid-template-columns: 1fr .62fr;
+}
+
+.arkon-request-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.05));
+  border-color: var(--arkon-border);
+  box-shadow: var(--arkon-shadow);
+}
+
+.arkon-request-panel p {
+  color: rgba(255,255,255,.74);
+  margin-top: 20px;
+}
+
+.arkon-check-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.arkon-check-list li {
+  color: rgba(255,255,255,.84);
+  padding-inline-start: 24px;
+  position: relative;
+}
+
+.arkon-check-list li::before {
+  background: var(--arkon-gold);
+  border-radius: 999px;
+  content: "";
+  height: 8px;
+  inset-block-start: .68em;
+  inset-inline-start: 0;
+  position: absolute;
+  width: 8px;
+}
+
 [data-arkon-reveal] {
   opacity: 0;
   transform: translateY(22px);
@@ -219,13 +563,28 @@ body {
 
 @media (max-width: 991px) {
   .arkon-hero__grid,
-  .arkon-company-grid {
+  .arkon-company-grid,
+  .arkon-split-layout,
+  .arkon-cta-layout {
     grid-template-columns: 1fr;
+  }
+
+  .arkon-feature-grid,
+  .arkon-command-grid,
+  .arkon-industry-grid,
+  .arkon-download-grid,
+  .arkon-proof-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .arkon-hero {
     min-height: auto;
     padding: 90px 0 60px;
+  }
+
+  .arkon-hero__visual,
+  .arkon-command-panel {
+    min-height: 430px;
   }
 }
 
@@ -237,6 +596,34 @@ body {
   .arkon-actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .arkon-feature-grid,
+  .arkon-command-grid,
+  .arkon-industry-grid,
+  .arkon-download-grid,
+  .arkon-proof-list,
+  .arkon-command-panel__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .arkon-company-card,
+  .arkon-feature-card,
+  .arkon-command-card,
+  .arkon-industry-card,
+  .arkon-download-card,
+  .arkon-request-panel,
+  .arkon-proof-list article {
+    min-height: auto;
+  }
+
+  .arkon-hero__visual,
+  .arkon-command-panel {
+    min-height: 360px;
+  }
+
+  .arkon-command-panel__map {
+    aspect-ratio: auto;
   }
 }
 
