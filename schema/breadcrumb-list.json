@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://arkongroup.com.sa/companies/arkon-engineering-consultancy/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://arkongroup.com.sa/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Group Companies",
+      "item": "https://arkongroup.com.sa/companies/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ARKON Engineering Consultancy Co.",
+      "item": "https://arkongroup.com.sa/companies/arkon-engineering-consultancy/"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://arkongroup.com.sa/services/engineering-consultancy/#service",
+  "name": "Engineering consultancy",
+  "serviceType": "Engineering consultancy",
+  "url": "https://arkongroup.com.sa/services/engineering-consultancy/",
+  "description": "Engineering consultancy including design review, infrastructure engineering, traffic impact studies, hydrology and drainage studies, construction supervision, and fire and life safety support.",
+  "provider": {
+    "@id": "https://arkongroup.com.sa/#organization"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Saudi Arabia"
+  },
+  "isRelatedTo": {
+    "@id": "https://arkongroup.com.sa/companies/arkon-engineering-consultancy/#organization"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engineering consultancy service areas",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fire and life safety"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Traffic impact studies"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hydrology and drainage studies"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Infrastructure engineering"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Construction supervision"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Design review"
+        }
+      }
+    ]
+  }
+}

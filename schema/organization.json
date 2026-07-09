@@ -1,32 +1,347 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://arkongroup.com.sa/#organization",
   "name": "ARKON Group",
-  "url": "https://arkongroup.com.sa",
+  "url": "https://arkongroup.com.sa/",
+  "description": "ARKON Group is a Saudi multidisciplinary group providing engineering consultancy, security consultancy, construction support, quality inspection, and digital marketing solutions.",
+  "email": "info@arkongroup.com.sa",
   "areaServed": {
     "@type": "Country",
     "name": "Saudi Arabia"
   },
+  "knowsAbout": [
+    "Engineering consultancy",
+    "Fire and life safety",
+    "Security consultancy",
+    "Construction support",
+    "Quality inspection",
+    "Soil testing",
+    "Digital marketing"
+  ],
   "department": [
     {
       "@type": "Organization",
-      "name": "ARKON Engineering Consultancy Co."
+      "@id": "https://arkongroup.com.sa/companies/arkon-engineering-consultancy/#organization",
+      "name": "ARKON Engineering Consultancy Co.",
+      "alternateName": "AEC",
+      "url": "https://arkongroup.com.sa/companies/arkon-engineering-consultancy/",
+      "description": "Engineering consultancy, fire and life safety, infrastructure, traffic, hydrology, supervision, and design review.",
+      "parentOrganization": {
+        "@id": "https://arkongroup.com.sa/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Engineering consultancy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fire and life safety"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Traffic impact studies"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hydrology and drainage studies"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Infrastructure engineering"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Construction supervision"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Design review"
+          }
+        }
+      ]
     },
     {
       "@type": "Organization",
-      "name": "ELITE Security Consultancy Co."
+      "@id": "https://arkongroup.com.sa/companies/elite-security-consultancy/#organization",
+      "name": "ELITE Security Consultancy Co.",
+      "alternateName": "ELITE",
+      "url": "https://arkongroup.com.sa/companies/elite-security-consultancy/",
+      "description": "SAIS/HCIS security consultancy, security risk assessment, authority readiness, and operational readiness.",
+      "parentOrganization": {
+        "@id": "https://arkongroup.com.sa/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SAIS/HCIS consultancy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Security risk assessment"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Concept of security design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Operational readiness"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Data center security advisory"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SEC-21 passive defence advisory"
+          }
+        }
+      ]
     },
     {
       "@type": "Organization",
-      "name": "Integrated Building Systems"
+      "@id": "https://arkongroup.com.sa/companies/integrated-building-systems/#organization",
+      "name": "Integrated Building Systems",
+      "alternateName": "IBS",
+      "url": "https://arkongroup.com.sa/companies/integrated-building-systems/",
+      "description": "Construction and technical works including civil works, MEP, finishing, steel structures, maintenance, and prefabricated units.",
+      "parentOrganization": {
+        "@id": "https://arkongroup.com.sa/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Civil works"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "MEP works"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Finishing works"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Steel structures"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Building maintenance"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fire alarm and fire protection works"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Porta cabins and prefabricated units"
+          }
+        }
+      ]
     },
     {
       "@type": "Organization",
-      "name": "Quality Inspection Company"
+      "@id": "https://arkongroup.com.sa/companies/quality-inspection-company/#organization",
+      "name": "Quality Inspection Company",
+      "alternateName": "QIC",
+      "url": "https://arkongroup.com.sa/companies/quality-inspection-company/",
+      "description": "Soil, concrete, asphalt, foundation, material, water, and air quality testing.",
+      "parentOrganization": {
+        "@id": "https://arkongroup.com.sa/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Soil testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Concrete testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Asphalt testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Foundation testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Construction material testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Geotechnical studies"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Water and air quality testing"
+          }
+        }
+      ]
     },
     {
       "@type": "Organization",
-      "name": "Turning Point Digital Marketing Co."
+      "@id": "https://arkongroup.com.sa/companies/turning-point-digital-marketing/#organization",
+      "name": "Turning Point Digital Marketing Co.",
+      "alternateName": "TP Digital",
+      "url": "https://arkongroup.com.sa/companies/turning-point-digital-marketing/",
+      "description": "Digital marketing, campaigns, social media, content creation, podcast studio services, and digital management software.",
+      "parentOrganization": {
+        "@id": "https://arkongroup.com.sa/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital marketing strategy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social media management"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Paid campaigns"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Content creation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Podcast studio services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital management software"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Performance reporting"
+          }
+        }
+      ]
     }
   ]
 }

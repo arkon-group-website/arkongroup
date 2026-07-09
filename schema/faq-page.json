@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://arkongroup.com.sa/#faq",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which companies are part of ARKON Group?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ARKON Group consists of ARKON Engineering Consultancy Co., ELITE Security Consultancy Co., Integrated Building Systems, Quality Inspection Company, and Turning Point Digital Marketing Co."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does ARKON Group cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ARKON Group covers engineering consultancy, security consultancy, construction and technical works, quality inspection and testing, and digital marketing services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ARKON Group serve projects in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ARKON Group is positioned for project support across the Kingdom of Saudi Arabia."
+      }
+    }
+  ]
+}

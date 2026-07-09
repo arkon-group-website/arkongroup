@@ -1,8 +1,15 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://arkongroup.com.sa/#website",
   "name": "ARKON Group",
-  "url": "https://arkongroup.com.sa",
+  "url": "https://arkongroup.com.sa/",
+  "publisher": {
+    "@id": "https://arkongroup.com.sa/#organization"
+  },
+  "about": {
+    "@id": "https://arkongroup.com.sa/#organization"
+  },
   "inLanguage": [
     "en",
     "ar"
